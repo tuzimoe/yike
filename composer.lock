@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "15377254cfe6861d77b1b6480a13a4b6",
@@ -150,20 +150,24 @@
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.6.3",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "728952b90a333b5c6f77f06ea9422b94b585878d"
+                "reference": "92e9c27ba0e74b8b028b111d1b6f956a15c01fc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/728952b90a333b5c6f77f06ea9422b94b585878d",
-                "reference": "728952b90a333b5c6f77f06ea9422b94b585878d",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/92e9c27ba0e74b8b028b111d1b6f956a15c01fc1",
+                "reference": "92e9c27ba0e74b8b028b111d1b6f956a15c01fc1",
                 "shasum": ""
             },
             "require": {
+                "ext-mbstring": "*",
                 "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -188,7 +192,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2017-05-14T14:47:48+00:00"
+            "time": "2018-03-08T01:11:30+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -534,12 +538,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jcc/laravel-vote.git",
-                "reference": "495bcd9b873671b9d7f4d7b42a8b93c60cf283c4"
+                "reference": "a49eedf4e7e22f828391b62eb56c9015261fc08c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jcc/laravel-vote/zipball/495bcd9b873671b9d7f4d7b42a8b93c60cf283c4",
-                "reference": "495bcd9b873671b9d7f4d7b42a8b93c60cf283c4",
+                "url": "https://api.github.com/repos/jcc/laravel-vote/zipball/a49eedf4e7e22f828391b62eb56c9015261fc08c",
+                "reference": "a49eedf4e7e22f828391b62eb56c9015261fc08c",
                 "shasum": ""
             },
             "require": {
@@ -549,6 +553,13 @@
                 "phpunit/phpunit": "~5.0"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jcc\\LaravelVote\\VoteServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Jcc\\LaravelVote\\": "src"
@@ -565,7 +576,7 @@
                 }
             ],
             "description": "The package helps you to add user based vote system to your model",
-            "time": "2017-05-10T05:56:13+00:00"
+            "time": "2018-01-11T10:01:20+00:00"
         },
         {
             "name": "jellybool/translug",
@@ -806,6 +817,64 @@
                 "psysh"
             ],
             "time": "2017-06-01T16:31:26+00:00"
+        },
+        {
+            "name": "lcobucci/jwt",
+            "version": "3.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lcobucci/jwt.git",
+                "reference": "c9704b751315d21735dc98d78d4f37bd73596da7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/c9704b751315d21735dc98d78d4f37bd73596da7",
+                "reference": "c9704b751315d21735dc98d78d4f37bd73596da7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-openssl": "*",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "mdanter/ecc": "~0.3.1",
+                "mikey179/vfsstream": "~1.5",
+                "phpmd/phpmd": "~2.2",
+                "phpunit/php-invoker": "~1.1",
+                "phpunit/phpunit": "~4.5",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "suggest": {
+                "mdanter/ecc": "Required to use Elliptic Curves based algorithms."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lcobucci\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Luís Otávio Cobucci Oblonczyk",
+                    "email": "lcobucci@gmail.com",
+                    "role": "developer"
+                }
+            ],
+            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
+            "keywords": [
+                "JWS",
+                "jwt"
+            ],
+            "time": "2018-08-03T11:23:50+00:00"
         },
         {
             "name": "league/flysystem",
@@ -1248,19 +1317,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/overtrue/laravel-follow.git",
-                "reference": "b4f8bd92800dee9968dd7a362c4c6cd24e203de0"
+                "reference": "c078306002bf3577db0c898fbbe80692938dc638"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/overtrue/laravel-follow/zipball/b4f8bd92800dee9968dd7a362c4c6cd24e203de0",
-                "reference": "b4f8bd92800dee9968dd7a362c4c6cd24e203de0",
+                "url": "https://api.github.com/repos/overtrue/laravel-follow/zipball/c078306002bf3577db0c898fbbe80692938dc638",
+                "reference": "c078306002bf3577db0c898fbbe80692938dc638",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": ">=7.0"
             },
             "require-dev": {
-                "laravel/laravel": "5.*",
+                "laravel/laravel": "~5.5",
                 "mockery/mockery": "1.0.x-dev",
                 "phpunit/phpunit": "~5.0"
             },
@@ -1288,7 +1357,7 @@
                 }
             ],
             "description": "Laravel 5 User Based System",
-            "time": "2017-07-13T04:37:55+00:00"
+            "time": "2018-10-26T15:13:40+00:00"
         },
         {
             "name": "overtrue/laravel-lang",
@@ -1386,18 +1455,28 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/overtrue/laravel-uploader.git",
-                "reference": "b61d39decacc9fefd97687f0dc7bc0aeeb378e44"
+                "reference": "e6cdfd8c7986133a3276182f211070ad73045ab4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/overtrue/laravel-uploader/zipball/b61d39decacc9fefd97687f0dc7bc0aeeb378e44",
-                "reference": "b61d39decacc9fefd97687f0dc7bc0aeeb378e44",
+                "url": "https://api.github.com/repos/overtrue/laravel-uploader/zipball/e6cdfd8c7986133a3276182f211070ad73045ab4",
+                "reference": "e6cdfd8c7986133a3276182f211070ad73045ab4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.9"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "\\Overtrue\\LaravelUploader\\UploadServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelUploader": "\\Overtrue\\LaravelUploader\\LaravelUploader"
+                    }
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Overtrue\\LaravelUploader\\": "src/LaravelUploader"
@@ -1416,7 +1495,7 @@
                     "email": "i@overtrue.me"
                 }
             ],
-            "time": "2017-06-27T13:58:07+00:00"
+            "time": "2018-04-19T02:36:17+00:00"
         },
         {
             "name": "overtrue/socialite",
@@ -2781,29 +2860,30 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tymondesigns/jwt-auth.git",
-                "reference": "a3f0c2c268237baba6074efde8ef4d7a829202df"
+                "reference": "689fcc263f6c4f650057905ae6dce441879df19b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/a3f0c2c268237baba6074efde8ef4d7a829202df",
-                "reference": "a3f0c2c268237baba6074efde8ef4d7a829202df",
+                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/689fcc263f6c4f650057905ae6dce441879df19b",
+                "reference": "689fcc263f6c4f650057905ae6dce441879df19b",
                 "shasum": ""
             },
             "require": {
-                "illuminate/auth": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
-                "illuminate/contracts": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
-                "illuminate/http": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
-                "illuminate/support": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
+                "illuminate/auth": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
+                "illuminate/contracts": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
+                "illuminate/http": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
+                "illuminate/support": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
+                "lcobucci/jwt": "^3.2",
                 "namshi/jose": "^7.0",
                 "nesbot/carbon": "^1.0",
                 "php": "^5.5.9 || ^7.0"
             },
             "require-dev": {
                 "cartalyst/sentinel": "2.0.*",
-                "illuminate/console": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
-                "illuminate/database": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
-                "illuminate/routing": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
-                "mockery/mockery": "0.9.*",
+                "illuminate/console": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
+                "illuminate/database": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
+                "illuminate/routing": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
+                "mockery/mockery": ">=0.9.9",
                 "phpunit/phpunit": "~4.8 || ~6.0"
             },
             "type": "library",
@@ -2847,7 +2927,7 @@
                 "jwt",
                 "laravel"
             ],
-            "time": "2017-07-12T13:22:30+00:00"
+            "time": "2018-10-17T13:25:54+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
